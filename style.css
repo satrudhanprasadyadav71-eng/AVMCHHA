@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    color: #222;
+}
+
+.welcome {
+    width: 90%;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.welcome h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.welcome p {
+    color: #666;
+    font-size: 17px;
+}
+
+button {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    background: #1877f2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
