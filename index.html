@@ -17,7 +17,34 @@
 
         <p>Simple UID Messaging</p>
 
-        <button onclick="startChat()">Start Chat</button>
+        <button id="startChatButton">Start Chat</button>
+    </div>
+
+    <div id="chatArea" style="display: none;">
+
+        <h2>Your UID</h2>
+        <p id="myUid">Loading...</p>
+
+        <input
+            type="text"
+            id="friendUid"
+            placeholder="Enter friend's UID"
+        >
+
+        <button id="connectButton">Connect</button>
+
+        <p id="friendStatus"></p>
+
+        <div id="messages"></div>
+
+        <input
+            type="text"
+            id="messageInput"
+            placeholder="Type your message"
+        >
+
+        <button id="sendButton">Send</button>
+
     </div>
 
     <script type="module" src="script.js"></script>
