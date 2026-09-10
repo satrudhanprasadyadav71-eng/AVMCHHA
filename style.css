@@ -9,11 +9,13 @@ body {
     color: #222;
 }
 
+/* WELCOME */
+
 .welcome {
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     margin: 100px auto;
-    padding: 35px;
+    padding: 40px;
     background: white;
     border-radius: 15px;
     text-align: center;
@@ -21,98 +23,106 @@ body {
 }
 
 .welcome h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 48px;
+    margin: 0 0 10px;
 }
 
 .welcome h2 {
-    font-size: 30px;
-    margin-top: 0;
+    font-size: 36px;
+    margin: 0 0 15px;
 }
 
 .welcome p {
+    font-size: 20px;
     color: #666;
-    font-size: 17px;
 }
 
 button {
     border: none;
-    padding: 14px 28px;
-    border-radius: 8px;
+    padding: 16px 32px;
+    border-radius: 10px;
     background: #1877f2;
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     cursor: pointer;
 }
 
-button:hover {
-    opacity: 0.9;
-}
 
-
-/* CHAT AREA */
+/* CHAT */
 
 #chatArea {
-    width: 90%;
-    max-width: 650px;
-    margin: 40px auto;
-    padding: 30px;
+    display: none;
+    width: 92%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
     background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
     text-align: center;
 }
 
+
+/* YOUR UID */
+
 #chatArea h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 34px;
+    margin: 0 0 15px;
 }
 
 #myUid {
-    font-size: 16px;
-    word-break: break-all;
+    width: 100%;
+    font-size: 20px;
     background: #f1f3f5;
-    padding: 12px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    padding: 18px;
+    border-radius: 10px;
+    margin: 0 auto 25px;
+    word-break: break-all;
 }
 
 
-/* INPUT BOXES */
+/* ALL INPUT BOXES */
 
 #friendUid,
 #messageInput {
+    display: block;
     width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 18px;
-    outline: none;
+    height: 58px;
+
+    margin: 15px auto;
+
+    padding: 15px 18px;
+
+    border: 2px solid #ccc;
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    text-align: center;
 }
 
-#friendUid:focus,
-#messageInput:focus {
-    border-color: #1877f2;
-}
 
-
-/* CONNECT BUTTON */
+/* CONNECT */
 
 #connectButton {
+    display: block;
     width: 100%;
-    margin: 8px 0 20px;
-    font-size: 18px;
-    padding: 15px;
+    height: 58px;
+
+    margin: 15px auto 25px;
+
+    font-size: 20px;
 }
 
 
-/* FRIEND STATUS */
+/* STATUS */
 
 #friendStatus {
-    font-size: 18px;
+    font-size: 21px;
     font-weight: bold;
-    margin: 15px 0;
+    text-align: center;
+    margin: 20px 0;
 }
 
 
@@ -120,68 +130,79 @@ button:hover {
 
 #messages {
     width: 100%;
-    min-height: 180px;
-    max-height: 350px;
-    overflow-y: auto;
-    text-align: left;
+    min-height: 220px;
+
+    margin: 20px auto;
+
+    padding: 18px;
+
     background: #f7f8fa;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+
+    text-align: left;
+
+    overflow-y: auto;
 }
 
 #messages div {
     background: white;
-    padding: 12px;
+
+    padding: 14px;
     margin-bottom: 10px;
-    border-radius: 8px;
-    font-size: 16px;
+
+    border-radius: 9px;
+
+    font-size: 18px;
+
     word-break: break-word;
 }
 
 
-/* SEND BUTTON */
+/* SEND */
 
 #sendButton {
+    display: block;
     width: 100%;
-    margin-top: 8px;
-    font-size: 18px;
-    padding: 15px;
+    height: 58px;
+
+    margin: 15px auto;
+
+    font-size: 20px;
 }
 
 
-/* MOBILE */
+/* PHONE */
 
 @media (max-width: 600px) {
 
     .welcome {
-        margin: 50px auto;
-        padding: 25px;
+        margin: 60px auto;
+        padding: 30px 20px;
     }
 
     .welcome h1 {
-        font-size: 34px;
+        font-size: 40px;
     }
 
     .welcome h2 {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     #chatArea {
         width: 94%;
-        margin: 20px auto;
-        padding: 20px;
+        margin: 25px auto;
+        padding: 25px 18px;
     }
 
     #chatArea h2 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     #friendUid,
     #messageInput {
-        font-size: 17px;
-        padding: 14px;
+        height: 58px;
+        font-size: 18px;
     }
 
 }
